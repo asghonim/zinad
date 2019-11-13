@@ -19,7 +19,7 @@ $ npm install -g zinad
 $ zinad COMMAND
 running command...
 $ zinad (-v|--version|version)
-zinad/0.0.0 darwin-x64 node-v10.16.3
+zinad/0.0.0 linux-x64 node-v10.9.0
 $ zinad --help [COMMAND]
 USAGE
   $ zinad COMMAND
@@ -29,7 +29,8 @@ USAGE
 # Commands
 <!-- commands -->
 * [`zinad help [COMMAND]`](#zinad-help-command)
-* [`zinad whoareyou [FILE]`](#zinad-whoareyou-file)
+* [`zinad tellmeajoke [FILE]`](#zinad-tellmeajoke-file)
+* [`zinad whoareyou`](#zinad-whoareyou)
 
 ## `zinad help [COMMAND]`
 
@@ -48,18 +49,32 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 
-## `zinad whoareyou [FILE]`
+## `zinad tellmeajoke [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ zinad whoareyou [FILE]
+  $ zinad tellmeajoke [FILE]
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
   -n, --name=name  name to print
+```
+
+_See code: [src/commands/tellmeajoke.ts](https://github.com/asghonim/zinad/blob/v0.0.0/src/commands/tellmeajoke.ts)_
+
+## `zinad whoareyou`
+
+describe the command here
+
+```
+USAGE
+  $ zinad whoareyou
+
+OPTIONS
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/whoareyou.ts](https://github.com/asghonim/zinad/blob/v0.0.0/src/commands/whoareyou.ts)_
