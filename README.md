@@ -12,8 +12,23 @@ ZINAD Utility CLI
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
 # Usage
 <!-- usage -->
+```sh-session
+$ npm install -g zinad
+$ zinad COMMAND
+running command...
+$ zinad (-v|--version|version)
+zinad/0.0.0 win32-x64 node-v10.16.3
+$ zinad --help [COMMAND]
+USAGE
+  $ zinad COMMAND
+...
+```
+<!-- usagestop -->
 ```sh-session
 $ npm install -g zinad
 $ zinad COMMAND
@@ -28,6 +43,55 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`zinad help [COMMAND]`](#zinad-help-command)
+* [`zinad tellmeajoke`](#zinad-tellmeajoke)
+* [`zinad whoareyou`](#zinad-whoareyou)
+
+## `zinad help [COMMAND]`
+
+display help for zinad
+
+```
+USAGE
+  $ zinad help [COMMAND]
+
+ARGUMENTS
+  COMMAND  command to show help for
+
+OPTIONS
+  --all  see all commands in CLI
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src\commands\help.ts)_
+
+## `zinad tellmeajoke`
+
+Tells a random joke from geek-joke api
+
+```
+USAGE
+  $ zinad tellmeajoke
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src\commands\tellmeajoke.ts](https://github.com/asghonim/zinad/blob/v0.0.0/src\commands\tellmeajoke.ts)_
+
+## `zinad whoareyou`
+
+describe the command here
+
+```
+USAGE
+  $ zinad whoareyou
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src\commands\whoareyou.ts](https://github.com/asghonim/zinad/blob/v0.0.0/src\commands\whoareyou.ts)_
+<!-- commandsstop -->
 * [`zinad help [COMMAND]`](#zinad-help-command)
 * [`zinad whoareyou [FILE]`](#zinad-whoareyou-file)
 
