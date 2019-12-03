@@ -1,0 +1,19 @@
+import {Command, flags} from '@oclif/command'
+import axios from 'axios'
+
+export default class tellmeajoke extends Command {
+    random_joke =() => {
+        axios.get('https://www.programmableweb.com/api/geek-joke').then((response)=>
+        console.log(response.data);
+    )}
+
+  static description = 'this is a random joke';
+  static flags = {
+    help: flags.help({char: 'h'}),
+  }
+  
+  async run() {
+    const {args, flags} = this.parse(tellmeajoke)
+    this.random_joke();
+  }
+}
