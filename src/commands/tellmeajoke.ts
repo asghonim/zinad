@@ -1,7 +1,7 @@
 import {Command, flags} from '@oclif/command'
 import { request } from 'http'
 
-export default class Tellmeajoke extends Command {
+export default class JokeRetrevied extends Command {
 
   static description = 'command is used to retrieve a joke from programmableweb.com'
 
@@ -10,7 +10,7 @@ export default class Tellmeajoke extends Command {
   }
 
   async run() {
-    const {args, flags} = this.parse(Tellmeajoke)
+    const {args, flags} = this.parse(JokeRetrevied)
     const req = request(
       {
           host: 'programmableweb.com',
