@@ -6,10 +6,10 @@ export default class Whoareyou extends Command {
   static flags = {
     help: flags.help({char: 'h'}),
   }
+
   async run() {
     const {args, flags} = this.parse(Whoareyou)
 
     this.log('I am ZINAD!')
   }
-
 }
