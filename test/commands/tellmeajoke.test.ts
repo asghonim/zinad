@@ -5,6 +5,6 @@ describe("whoareyou", () => {
     .stdout()
     .command(["whoareyou"])
     .it("run whoareyou and reply 'I am ZINAD!'", ctx => {
-      expect(ctx.stdout).to.be.not.null;
+      expect(ctx.stdout).to.be.not.equal(null);
     });
 });
