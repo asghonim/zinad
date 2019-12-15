@@ -61,6 +61,18 @@ OPTIONS
   -h, --help       show CLI help
   -n, --name=name  name to print
 ```
-
 _See code: [src/commands/whoareyou.ts](https://github.com/asghonim/zinad/blob/v0.0.0/src/commands/whoareyou.ts)_
+
+
+## `zinad tellmeajoke [FILE]`
+describe the command here
+```
+USAGE
+  $ zinad tellmeajoke [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```  
 <!-- commandsstop -->
