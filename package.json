@@ -1,32 +1,29 @@
 {
-  "name": "zinad",
-  "description": "ZINAD Utility CLI",
+  "name": "tellmeajoke",
+  "description": "tell me a random joke",
   "version": "0.0.0",
-  "author": "@asghonim",
+  "author": "Menna Atef",
   "bin": {
-    "zinad": "./bin/run"
+    "tellmeajoke": "./bin/run"
   },
-  "bugs": "https://github.com/asghonim/zinad/issues",
+  "bugs": "https://github.com/zinad-task-command/tellmeajoke/issues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
-    "@oclif/plugin-help": "^2.2.1",
+    "@oclif/plugin-help": "^2.2.3",
+    "axios": "^0.19.0",
     "tslib": "^1.10.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
-    "@oclif/test": "^1.2.5",
-    "@oclif/tslint": "^3.1.1",
-    "@types/chai": "^4.2.4",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^10.14.20",
-    "chai": "^4.2.0",
+    "@types/node": "^10.14.4",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-config-oclif-typescript": "^0.1.0",
     "globby": "^10.0.1",
-    "mocha": "^5.2.0",
-    "nyc": "^13.3.0",
-    "ts-node": "^8.4.1",
-    "tslint": "^5.20.0",
-    "typescript": "^3.6.3"
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.4.5"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -37,7 +34,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/asghonim/zinad",
+  "homepage": "https://github.com/zinad-task-command/tellmeajoke",
   "keywords": [
     "oclif"
   ],
@@ -45,17 +42,17 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "zinad",
+    "bin": "tellmeajoke",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "asghonim/zinad",
+  "repository": "zinad-task-command/tellmeajoke",
   "scripts": {
-    "postpack": "rm -f oclif.manifest.json",
-    "posttest": "tslint -p test -t stylish",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "postpack": "rimraf oclif.manifest.json",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts"

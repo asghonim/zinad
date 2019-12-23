@@ -1,12 +1,12 @@
-zinad
-=====
+tellmeajoke
+===========
 
-ZINAD Utility CLI
+tell me a random joke
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/zinad.svg)](https://npmjs.org/package/zinad)
-[![Downloads/week](https://img.shields.io/npm/dw/zinad.svg)](https://npmjs.org/package/zinad)
-[![License](https://img.shields.io/npm/l/zinad.svg)](https://github.com/asghonim/zinad/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/tellmeajoke.svg)](https://npmjs.org/package/tellmeajoke)
+[![Downloads/week](https://img.shields.io/npm/dw/tellmeajoke.svg)](https://npmjs.org/package/tellmeajoke)
+[![License](https://img.shields.io/npm/l/tellmeajoke.svg)](https://github.com/zinad-task-command/tellmeajoke/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -15,29 +15,49 @@ ZINAD Utility CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g zinad
-$ zinad COMMAND
+$ npm install -g tellmeajoke
+$ tellmeajoke COMMAND
 running command...
-$ zinad (-v|--version|version)
-zinad/0.0.0 darwin-x64 node-v10.16.3
-$ zinad --help [COMMAND]
+$ tellmeajoke (-v|--version|version)
+tellmeajoke/0.0.0 win32-x64 node-v10.15.3
+$ tellmeajoke --help [COMMAND]
 USAGE
-  $ zinad COMMAND
+  $ tellmeajoke COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`zinad help [COMMAND]`](#zinad-help-command)
-* [`zinad whoareyou [FILE]`](#zinad-whoareyou-file)
+* [`tellmeajoke hello [FILE]`](#tellmeajoke-hello-file)
+* [`tellmeajoke help [COMMAND]`](#tellmeajoke-help-command)
 
-## `zinad help [COMMAND]`
+## `tellmeajoke hello [FILE]`
 
-display help for zinad
+describe the command here
 
 ```
 USAGE
-  $ zinad help [COMMAND]
+  $ tellmeajoke hello [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+
+EXAMPLE
+  $ tellmeajoke hello
+  hello world from ./src/hello.ts!
+```
+
+_See code: [src\commands\hello.ts](https://github.com/zinad-task-command/tellmeajoke/blob/v0.0.0/src\commands\hello.ts)_
+
+## `tellmeajoke help [COMMAND]`
+
+display help for tellmeajoke
+
+```
+USAGE
+  $ tellmeajoke help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -46,21 +66,5 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
-
-## `zinad whoareyou [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ zinad whoareyou [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/whoareyou.ts](https://github.com/asghonim/zinad/blob/v0.0.0/src/commands/whoareyou.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3/src\commands\help.ts)_
 <!-- commandsstop -->
