@@ -1,5 +1,8 @@
 import {expect, test} from '@oclif/test'
 
+let message: string = 'Hello World';
+console.log(message);
+
 describe('whoareyou', () => {
   test
     .stdout()
